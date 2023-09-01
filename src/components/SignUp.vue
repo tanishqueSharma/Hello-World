@@ -1,6 +1,8 @@
 <template>
-    <h1>Sign Up</h1>
+    <!-- <h1>Sign Up</h1> -->
     <div class="register">
+            <h1>Sign Up</h1>
+
     <input type="text" placeholder="Enter name"/>
     <input type="password" placeholder="Enter password"/>
     <input type="text" placeholder="Enter email"/>

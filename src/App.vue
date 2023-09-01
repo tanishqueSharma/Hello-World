@@ -1,6 +1,8 @@
 <template>
+<div>
   <h1>{{msg}}</h1>
   <SignUp />
+  </div>
 </template>
 
 <script>
