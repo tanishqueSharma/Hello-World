@@ -1,10 +1,15 @@
 <template>
   <h1>{{msg}}</h1>
+  <SignUp />
 </template>
 
 <script>
+import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
+  components:{
+    SignUp
+  },
   
   data(){
     return{
