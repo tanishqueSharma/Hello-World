@@ -1,20 +1,25 @@
 <template>
-<div>
+<!-- <div>
   <h1>{{msg}}</h1>
   <SignUp />
   <LoginPage />
-  </div>
+  </div> -->
+  <h1>{{msg}}</h1>
+  <router-link to="/home">HomePage</router-link><br>
+<router-link to="/login">LoginPage</router-link><br>
+<router-link to="/sign-up">SignUp</router-link>
+  <router-view></router-view>
 </template>
 
 <script>
-import LoginPage from './components/LoginPage.vue'
-import SignUp from './components/SignUp.vue'
+//import LoginPage from './components/LoginPage.vue'
+//import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
-  components:{
-    SignUp,
-    LoginPage
-  },
+  // components:{
+  //   SignUp,
+  //   LoginPage
+  // },
   
   data(){
     return{
