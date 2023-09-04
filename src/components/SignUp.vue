@@ -1,6 +1,6 @@
 <template>
 <div class="register">
-    <form @submit.prevent="submitData">
+    <form @submit.prevent>
     <div>
     <label>Name</label>
     <input type="text" placeholder="Enter name"/>
@@ -26,7 +26,13 @@
 
 <script>
 export default{
-    name:'SignUp'
+    name:'SignUp',
+    props:[
+        'name',
+        'phone',
+        'email',
+        'password'
+    ]
 }
 </script>
 

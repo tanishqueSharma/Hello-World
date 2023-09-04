@@ -1,6 +1,6 @@
 <template>
-    <div class="register">
-    <form @submit.prevent="submitData">
+    <div class="login">
+    <form @submit.prevent>
     <div>
     <label>Name</label>
     <input type="text" placeholder="Enter name"/>
@@ -18,7 +18,11 @@
 
 <script>
 export default{
-    name:'LoginPage'
+    name:'LoginPage',
+    props:[
+        'name',
+        'password'
+    ]
 }
 </script>
 
