@@ -1,13 +1,27 @@
 <template>
-    <!-- <h1>Sign Up</h1> -->
-    <div class="register">
-            <h1>Sign Up</h1>
-
+<div class="register">
+    <form @submit.prevent="submitData">
+    <div>
+    <label>Name</label>
     <input type="text" placeholder="Enter name"/>
-    <input type="password" placeholder="Enter password"/>
-    <input type="text" placeholder="Enter email"/>
-    <button>Sign Up</button>
     </div>
+    <div>
+    <label>Phone</label>
+    <input type="tel" placeholder="Enter phone number"/>
+    </div>
+    <div>
+    <label>E-Mail</label>
+    <input type="email" placeholder="Enter email" />
+    </div>
+    <div>
+    <label>Password</label>
+    <input type="password" placeholder="Enter password"/>
+    </div>
+    <div>
+        <button>Sign up </button>
+    </div>
+</form>
+</div>
 </template>
 
 <script>
@@ -17,14 +31,5 @@ export default{
 </script>
 
 <style scoped>
-.register input{
-    width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    display: block;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid skyblue;
-}
+
 </style>

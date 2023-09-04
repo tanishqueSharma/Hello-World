@@ -1,13 +1,19 @@
 <template>
-    <div class="login">
-            <h1>Login</h1>
-
+    <div class="register">
+    <form @submit.prevent="submitData">
+    <div>
+    <label>Name</label>
     <input type="text" placeholder="Enter name"/>
-    <input type="password" placeholder="Enter password"/>
-
-
-    <button>Login</button>
     </div>
+    <div>
+    <label>Password</label>
+    <input type="password" placeholder="Enter password"/>
+    </div>
+    <div>
+        <button>Login </button>
+    </div>
+</form>
+</div>
 </template>
 
 <script>
@@ -17,15 +23,6 @@ export default{
 </script>
 
 <style scoped>
-.login input{
-    width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    display: block;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid skyblue;
-}
+
 
 </style>
